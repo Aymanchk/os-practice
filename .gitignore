@@ -1,0 +1,22 @@
+# Системные и временные файлы
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Python и виртуальные окружения
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Локальные настройки редакторов и секреты
+.idea/
+.vscode/
+.env
+.env.*
