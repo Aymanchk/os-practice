@@ -1,0 +1,13 @@
+$ whoami
+student
+$ ls -ld /srv/shared
+drwxrwsr-x 2 root developers 4096 Sep 23 18:08 /srv/shared
+$ stat -c "%U %G %a %n" /srv/shared/student2.txt
+student2 developers 644 /srv/shared/student2.txt
+$ cat /srv/shared/student2.txt
+Created by student2
+$ rm -f /srv/shared/student2.txt
+rm: cannot remove '/srv/shared/student2.txt': Permission denied
+rm exit status: 1
+$ ls -l /srv/shared/student2.txt
+-rw-r--r-- 1 student2 developers 20 Sep 23 18:08 /srv/shared/student2.txt
