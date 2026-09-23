@@ -1,0 +1,18 @@
+$ whoami
+student
+$ alias ll
+alias ll='ls -lah'
+$ alias cshared
+alias cshared='cd /srv/shared'
+$ printenv OS_PRACTICE
+practice1
+$ bash -c 'echo "$OS_PRACTICE"'
+practice1
+$ cshared
+$ pwd
+/srv/shared
+$ ll
+total 12K
+drwxrwsr-x 2 root     developers 4.0K Sep 23 18:08 .
+drwxr-xr-x 3 root     root       4.0K Sep 23 18:07 ..
+-rw-r--r-- 1 student2 developers   20 Sep 23 18:08 student2.txt
