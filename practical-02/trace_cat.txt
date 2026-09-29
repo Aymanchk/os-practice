@@ -1,0 +1,145 @@
+7609  execve("/usr/bin/cat", ["cat", "data/01.log"], 0xffffe787d128 /* 55 vars */) = 0
+7609  brk(NULL)                         = 0xc8a9500fd000
+7609  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2e05db43000
+7609  faccessat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+7609  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=63411, ...}) = 0
+7609  mmap(NULL, 63411, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0xf2e05dafd000
+7609  close(3</etc/ld.so.cache>)        = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/lib/aarch64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libselinux.so.1>
+7609  read(3</usr/lib/aarch64-linux-gnu/libselinux.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7609  fstat(3</usr/lib/aarch64-linux-gnu/libselinux.so.1>, {st_mode=S_IFREG|0644, st_size=264608, ...}) = 0
+7609  mmap(NULL, 337200, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2e05daaa000
+7609  mmap(0xf2e05dab0000, 271664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libselinux.so.1>, 0) = 0xf2e05dab0000
+7609  munmap(0xf2e05daaa000, 24576)     = 0
+7609  munmap(0xf2e05daf3000, 38192)     = 0
+7609  mprotect(0xf2e05dae0000, 61440, PROT_NONE) = 0
+7609  mmap(0xf2e05daef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libselinux.so.1>, 0x3f000) = 0xf2e05daef000
+7609  mmap(0xf2e05daf1000, 5424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf2e05daf1000
+7609  mmap(0xf2e05dab0000, 196608, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libselinux.so.1>, 0) = 0xf2e05dab0000
+7609  close(3</usr/lib/aarch64-linux-gnu/libselinux.so.1>) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>
+7609  read(3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7609  fstat(3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, {st_mode=S_IFREG|0644, st_size=133776, ...}) = 0
+7609  mmap(NULL, 263072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2e05da6f000
+7609  mmap(0xf2e05da70000, 197536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, 0) = 0xf2e05da70000
+7609  munmap(0xf2e05da6f000, 4096)      = 0
+7609  munmap(0xf2e05daa1000, 58272)     = 0
+7609  mprotect(0xf2e05da8f000, 65536, PROT_NONE) = 0
+7609  mmap(0xf2e05da9f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, 0x1f000) = 0xf2e05da9f000
+7609  mmap(0xf2e05da70000, 126976, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, 0) = 0xf2e05da70000
+7609  close(3</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libm.so.6>
+7609  read(3</usr/lib/aarch64-linux-gnu/libm.so.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7609  fstat(3</usr/lib/aarch64-linux-gnu/libm.so.6>, {st_mode=S_IFREG|0644, st_size=723144, ...}) = 0
+7609  mmap(NULL, 851992, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2e05d99f000
+7609  mmap(0xf2e05d9a0000, 786456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0) = 0xf2e05d9a0000
+7609  munmap(0xf2e05d99f000, 4096)      = 0
+7609  munmap(0xf2e05da61000, 57368)     = 0
+7609  mprotect(0xf2e05da4f000, 65536, PROT_NONE) = 0
+7609  mmap(0xf2e05da5f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0xaf000) = 0xf2e05da5f000
+7609  mmap(0xf2e05d9a0000, 716800, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0) = 0xf2e05d9a0000
+7609  close(3</usr/lib/aarch64-linux-gnu/libm.so.6>) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+7609  read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0"..., 832) = 832
+7609  fstat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+7609  mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2e05d7c2000
+7609  mmap(0xf2e05d7d0000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xf2e05d7d0000
+7609  munmap(0xf2e05d7c2000, 57344)     = 0
+7609  munmap(0xf2e05d99e000, 7744)      = 0
+7609  mprotect(0xf2e05d979000, 81920, PROT_NONE) = 0
+7609  mmap(0xf2e05d98d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0x1ad000) = 0xf2e05d98d000
+7609  mmap(0xf2e05d992000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf2e05d992000
+7609  mmap(0xf2e05d7d0000, 1740800, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xf2e05d7d0000
+7609  close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/lib/aarch64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>
+7609  read(3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7609  fstat(3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>, {st_mode=S_IFREG|0644, st_size=658040, ...}) = 0
+7609  mmap(NULL, 786968, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2e05d70f000
+7609  mmap(0xf2e05d710000, 721432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>, 0) = 0xf2e05d710000
+7609  munmap(0xf2e05d70f000, 4096)      = 0
+7609  munmap(0xf2e05d7c1000, 57880)     = 0
+7609  mprotect(0xf2e05d7a7000, 98304, PROT_NONE) = 0
+7609  mmap(0xf2e05d7bf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>, 0x9f000) = 0xf2e05d7bf000
+7609  mmap(0xf2e05d710000, 618496, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>, 0) = 0xf2e05d710000
+7609  close(3</usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.14.0>) = 0
+7609  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2e05db41000
+7609  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2e05db3e000
+7609  set_tid_address(0xf2e05db3e448)   = 7609
+7609  set_robust_list(0xf2e05db3e100, 24) = 0
+7609  rseq(0xf2e05db3ebc0, 0x21, 0, 0xd428bc00) = 0
+7609  mprotect(0xf2e05d98d000, 12288, PROT_READ) = 0
+7609  mprotect(0xf2e05d7bf000, 4096, PROT_READ) = 0
+7609  mprotect(0xf2e05da5f000, 4096, PROT_READ) = 0
+7609  mprotect(0xf2e05da9f000, 4096, PROT_READ) = 0
+7609  mprotect(0xf2e05daef000, 4096, PROT_READ) = 0
+7609  mprotect(0xc8a92321f000, 1380352, PROT_READ) = 0
+7609  mprotect(0xf2e05db4b000, 8192, PROT_READ) = 0
+7609  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7609  getrandom("\xf8\x95\x1d\x70\x2a\x7e\x83\x5c", 8, GRND_NONBLOCK) = 8
+7609  munmap(0xf2e05dafd000, 63411)     = 0
+7609  statfs("/sys/fs/selinux", 0xffffc506be10) = -1 ENOENT (No such file or directory)
+7609  statfs("/selinux", 0xffffc506be10) = -1 ENOENT (No such file or directory)
+7609  brk(NULL)                         = 0xc8a9500fd000
+7609  brk(0xc8a950200000)               = 0xc8a950200000
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3</proc/filesystems>
+7609  fstat(3</proc/filesystems>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+7609  read(3</proc/filesystems>, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tpr"..., 1024) = 384
+7609  read(3</proc/filesystems>, "", 1024) = 0
+7609  close(3</proc/filesystems>)       = 0
+7609  faccessat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+7609  fcntl(0</dev/pts/0>, F_GETFD)     = 0
+7609  fcntl(1</dev/null>, F_GETFD)      = 0
+7609  fcntl(2</dev/pts/0>, F_GETFD)     = 0
+7609  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7609  ppoll([{fd=0</dev/pts/0>, events=0}, {fd=1</dev/null>, events=0}, {fd=2</dev/pts/0>, events=0}], 3, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+7609  rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3</proc/7609/maps>
+7609  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7609  fstat(3</proc/7609/maps>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+7609  read(3</proc/7609/maps>, "c8a922950000-c8a92320c000 r-xp 0"..., 1024) = 1024
+7609  read(3</proc/7609/maps>, "ux-gnu/libc.so.6\nf2e05d979000-f2"..., 1024) = 1024
+7609  read(3</proc/7609/maps>, "usr/lib/aarch64-linux-gnu/libgcc"..., 1024) = 1024
+7609  read(3</proc/7609/maps>, " [vvar]\nf2e05db49000-f2e05db4b00"..., 1024) = 462
+7609  close(3</proc/7609/maps>)         = 0
+7609  sched_getaffinity(7609, 32, [0 1 2 3]) = 8
+7609  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7609  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+7609  mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xf2e05db39000
+7609  mprotect(0xf2e05db39000, 4096, PROT_NONE) = 0
+7609  sigaltstack({ss_sp=0xf2e05db3a000, ss_flags=0, ss_size=16384}, NULL) = 0
+7609  gettid()                          = 7609
+7609  rt_sigaction(SIGSEGV, {sa_handler=0xc8a922bd0db0, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, NULL, 8) = 0
+7609  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7609  rt_sigaction(SIGBUS, {sa_handler=0xc8a922bd0db0, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, NULL, 8) = 0
+7609  prctl(PR_GET_AUXV, 0xffffc506b888, 0x200, 0, 0) = 432
+7609  statx(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/share/coreutils/locales/cat", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+7609  statx(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/share/coreutils/locales/uucore", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/share/coreutils/locales/uucore/en-US.ftl", O_RDONLY|O_CLOEXEC) = 3</usr/share/coreutils/locales/uucore/en-US.ftl>
+7609  statx(3</usr/share/coreutils/locales/uucore/en-US.ftl>, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4080, ...}) = 0
+7609  read(3</usr/share/coreutils/locales/uucore/en-US.ftl>, "# Common strings shared across a"..., 4080) = 4080
+7609  read(3</usr/share/coreutils/locales/uucore/en-US.ftl>, "", 32) = 0
+7609  close(3</usr/share/coreutils/locales/uucore/en-US.ftl>) = 0
+7609  statx(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/share/coreutils/locales/cat", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "/usr/share/coreutils/locales/cat/en-US.ftl", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+7609  rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTART}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTART}, 8) = 0
+7609  rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=0}, {sa_handler=0xc8a922bd0db0, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, 8) = 0
+7609  rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=0}, {sa_handler=0xc8a922bd0db0, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, 8) = 0
+7609  ioctl(1</dev/null>, TCGETS2, 0xffffc5068888) = -1 ENOTTY (Inappropriate ioctl for device)
+7609  statx(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "data/01.log", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=19076, ...}) = 0
+7609  openat(AT_FDCWD</home/student/os-practice-pr2/practical-02>, "data/01.log", O_RDONLY|O_CLOEXEC) = 3</home/student/os-practice-pr2/practical-02/data/01.log>
+7609  fstat(3</home/student/os-practice-pr2/practical-02/data/01.log>, {st_mode=S_IFREG|0664, st_size=19076, ...}) = 0
+7609  fstat(1</dev/null>, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+7609  splice(3</home/student/os-practice-pr2/practical-02/data/01.log>, NULL, 1</dev/null>, NULL, 1048576, 0) = -1 EINVAL (Invalid argument)
+7609  pipe2([4<pipe:[43696]>, 5<pipe:[43696]>], 0) = 0
+7609  fcntl(4<pipe:[43696]>, F_SETPIPE_SZ, 1048576) = 1048576
+7609  splice(3</home/student/os-practice-pr2/practical-02/data/01.log>, NULL, 5<pipe:[43696]>, NULL, 1048576, 0) = 19076
+7609  splice(4<pipe:[43696]>, NULL, 1</dev/null>, NULL, 19076, 0) = 19076
+7609  splice(3</home/student/os-practice-pr2/practical-02/data/01.log>, NULL, 5<pipe:[43696]>, NULL, 1048576, 0) = 0
+7609  close(5<pipe:[43696]>)            = 0
+7609  close(4<pipe:[43696]>)            = 0
+7609  close(3</home/student/os-practice-pr2/practical-02/data/01.log>) = 0
+7609  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=16384}, NULL) = 0
+7609  munmap(0xf2e05db39000, 20480)     = 0
+7609  exit_group(0)                     = ?
+7609  +++ exited with 0 +++
