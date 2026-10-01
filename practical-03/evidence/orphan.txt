@@ -1,0 +1,10 @@
+Промежуточный родитель PID=8892 создал ребёнка PID=8893 и завершается
+
+Ребёнок PID=8893
+Первоначальный PPID=8892
+Новый PPID=2316, имя усыновителя=systemd
+    PID    PPID S STAT CMD
+   2316       1 S Ss   /usr/lib/systemd/systemd --user
+   8893    2316 S S+   python3 ./orphan_demo.py
+
+Демонстрация сироты завершена
