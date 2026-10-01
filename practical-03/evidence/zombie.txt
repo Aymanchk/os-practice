@@ -1,0 +1,9 @@
+Родитель PID=8857, ребёнок PID=8862
+Ребёнок PID=8862 завершается
+    PID    PPID S STAT CMD
+   8862    8857 Z Z+   [python3] <defunct>
+
+До waitpid ребёнок находится в состоянии зомби:
+
+waitpid получил PID=8862, код=0
+/proc/8862 существует после waitpid: False
