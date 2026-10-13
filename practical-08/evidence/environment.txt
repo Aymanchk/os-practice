@@ -1,0 +1,4 @@
+Python 3.14.4
+aarch64
+4
+Ubuntu 26.04.1 LTS

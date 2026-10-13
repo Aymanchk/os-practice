@@ -1,0 +1,11 @@
+# журнал событий: acquire - взял, wait - ждёт, release - отпустил
+acquire T1 A
+acquire T2 B
+acquire T5 E
+release T5 E
+acquire T3 C
+acquire T4 D
+wait T4 A
+wait T1 B
+wait T2 C
+wait T3 A
