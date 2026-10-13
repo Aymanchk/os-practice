@@ -1,0 +1,4 @@
+Python 3.14.4
+aarch64
+10
+Ubuntu 26.04.1 LTS (Docker-контейнер на MacBook M4)
