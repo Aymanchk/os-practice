@@ -1,0 +1,2 @@
+BrokenPipeError: [Errno 32] Broken pipe
+Читающих концов нет, запись завершилась ошибкой EPIPE
