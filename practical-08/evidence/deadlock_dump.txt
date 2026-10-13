@@ -1,0 +1,21 @@
+T1: взял lock_a
+T2: взял lock_b
+T2: хочет lock_a
+T1: хочет lock_b
+Timeout (0:00:03)!
+Thread 0x0000e2b9434af160 [T2] (most recent call first):
+  File "/home/student/os-practice-pr2/practical-08/./deadlock.py", line 34 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x0000e2b93b3ff160 [T1] (most recent call first):
+  File "/home/student/os-practice-pr2/practical-08/./deadlock.py", line 34 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x0000e2b944cd77a0 [python3] (most recent call first):
+  File "/usr/lib/python3.14/threading.py", line 1133 in join
+  File "/home/student/os-practice-pr2/practical-08/./deadlock.py", line 73 in main
+  File "/home/student/os-practice-pr2/practical-08/./deadlock.py", line 80 in <module>

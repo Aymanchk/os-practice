@@ -1,0 +1,4 @@
+T1: взял lock_a
+T2: взял lock_b
+T1: хочет lock_b
+T2: хочет lock_a

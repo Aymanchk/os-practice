@@ -1,0 +1,13 @@
+# журнал без взаимоблокировки: цепочка ожиданий разрешается
+acquire T1 A
+acquire T2 B
+acquire T3 C
+wait T1 B
+wait T2 C
+release T3 C
+acquire T2 C
+release T2 C
+release T2 B
+acquire T1 B
+release T1 B
+release T1 A
