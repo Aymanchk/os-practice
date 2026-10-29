@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="148" viewBox="0 0 1100 148" font-family="Arial, sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="22" font-size="16" font-weight="bold">starve.txt: Priority без старения и со старением</text>
+<text x="10" y="61" font-weight="bold">Priority</text>
+<rect x="190.0" y="40" width="42.4" height="26" fill="#f28e2b" stroke="white"/>
+<text x="211.2" y="57" text-anchor="middle" fill="white">P2</text>
+<rect x="232.4" y="40" width="42.4" height="26" fill="#e15759" stroke="white"/>
+<text x="253.6" y="57" text-anchor="middle" fill="white">P3</text>
+<rect x="274.8" y="40" width="42.4" height="26" fill="#76b7b2" stroke="white"/>
+<text x="296.0" y="57" text-anchor="middle" fill="white">P4</text>
+<rect x="317.1" y="40" width="42.4" height="26" fill="#59a14f" stroke="white"/>
+<text x="338.3" y="57" text-anchor="middle" fill="white">P5</text>
+<rect x="359.5" y="40" width="42.4" height="26" fill="#edc948" stroke="white"/>
+<text x="380.7" y="57" text-anchor="middle" fill="white">P6</text>
+<rect x="401.9" y="40" width="42.4" height="26" fill="#b07aa1" stroke="white"/>
+<text x="423.1" y="57" text-anchor="middle" fill="white">P7</text>
+<rect x="444.3" y="40" width="42.4" height="26" fill="#ff9da7" stroke="white"/>
+<text x="465.5" y="57" text-anchor="middle" fill="white">P8</text>
+<rect x="486.7" y="40" width="42.4" height="26" fill="#9c755f" stroke="white"/>
+<text x="507.9" y="57" text-anchor="middle" fill="white">P9</text>
+<rect x="529.0" y="40" width="42.4" height="26" fill="#bab0ac" stroke="white"/>
+<text x="550.2" y="57" text-anchor="middle" fill="white">P10</text>
+<rect x="571.4" y="40" width="42.4" height="26" fill="#4e79a7" stroke="white"/>
+<text x="592.6" y="57" text-anchor="middle" fill="white">P11</text>
+<rect x="613.8" y="40" width="42.4" height="26" fill="#f28e2b" stroke="white"/>
+<text x="635.0" y="57" text-anchor="middle" fill="white">P12</text>
+<rect x="656.2" y="40" width="42.4" height="26" fill="#e15759" stroke="white"/>
+<text x="677.4" y="57" text-anchor="middle" fill="white">P13</text>
+<rect x="698.6" y="40" width="42.4" height="26" fill="#76b7b2" stroke="white"/>
+<text x="719.8" y="57" text-anchor="middle" fill="white">P14</text>
+<rect x="741.0" y="40" width="42.4" height="26" fill="#59a14f" stroke="white"/>
+<text x="762.1" y="57" text-anchor="middle" fill="white">P15</text>
+<rect x="783.3" y="40" width="42.4" height="26" fill="#edc948" stroke="white"/>
+<text x="804.5" y="57" text-anchor="middle" fill="white">P16</text>
+<rect x="825.7" y="40" width="42.4" height="26" fill="#b07aa1" stroke="white"/>
+<text x="846.9" y="57" text-anchor="middle" fill="white">P17</text>
+<rect x="868.1" y="40" width="42.4" height="26" fill="#ff9da7" stroke="white"/>
+<text x="889.3" y="57" text-anchor="middle" fill="white">P18</text>
+<rect x="910.5" y="40" width="42.4" height="26" fill="#9c755f" stroke="white"/>
+<text x="931.7" y="57" text-anchor="middle" fill="white">P19</text>
+<rect x="952.9" y="40" width="42.4" height="26" fill="#bab0ac" stroke="white"/>
+<text x="974.0" y="57" text-anchor="middle" fill="white">P20</text>
+<rect x="995.2" y="40" width="84.8" height="26" fill="#4e79a7" stroke="white"/>
+<text x="1037.6" y="57" text-anchor="middle" fill="white">P1</text>
+<text x="10" y="95" font-weight="bold">Priority+aging(5)</text>
+<rect x="190.0" y="74" width="42.4" height="26" fill="#f28e2b" stroke="white"/>
+<text x="211.2" y="91" text-anchor="middle" fill="white">P2</text>
+<rect x="232.4" y="74" width="42.4" height="26" fill="#e15759" stroke="white"/>
+<text x="253.6" y="91" text-anchor="middle" fill="white">P3</text>
+<rect x="274.8" y="74" width="42.4" height="26" fill="#76b7b2" stroke="white"/>
+<text x="296.0" y="91" text-anchor="middle" fill="white">P4</text>
+<rect x="317.1" y="74" width="42.4" height="26" fill="#59a14f" stroke="white"/>
+<text x="338.3" y="91" text-anchor="middle" fill="white">P5</text>
+<rect x="359.5" y="74" width="42.4" height="26" fill="#edc948" stroke="white"/>
+<text x="380.7" y="91" text-anchor="middle" fill="white">P6</text>
+<rect x="401.9" y="74" width="42.4" height="26" fill="#b07aa1" stroke="white"/>
+<text x="423.1" y="91" text-anchor="middle" fill="white">P7</text>
+<rect x="444.3" y="74" width="42.4" height="26" fill="#ff9da7" stroke="white"/>
+<text x="465.5" y="91" text-anchor="middle" fill="white">P8</text>
+<rect x="486.7" y="74" width="42.4" height="26" fill="#9c755f" stroke="white"/>
+<text x="507.9" y="91" text-anchor="middle" fill="white">P9</text>
+<rect x="529.0" y="74" width="42.4" height="26" fill="#bab0ac" stroke="white"/>
+<text x="550.2" y="91" text-anchor="middle" fill="white">P10</text>
+<rect x="571.4" y="74" width="42.4" height="26" fill="#4e79a7" stroke="white"/>
+<text x="592.6" y="91" text-anchor="middle" fill="white">P11</text>
+<rect x="613.8" y="74" width="42.4" height="26" fill="#f28e2b" stroke="white"/>
+<text x="635.0" y="91" text-anchor="middle" fill="white">P12</text>
+<rect x="656.2" y="74" width="42.4" height="26" fill="#e15759" stroke="white"/>
+<text x="677.4" y="91" text-anchor="middle" fill="white">P13</text>
+<rect x="698.6" y="74" width="42.4" height="26" fill="#4e79a7" stroke="white"/>
+<text x="719.8" y="91" text-anchor="middle" fill="white">P1</text>
+<rect x="741.0" y="74" width="42.4" height="26" fill="#59a14f" stroke="white"/>
+<text x="762.1" y="91" text-anchor="middle" fill="white">P15</text>
+<rect x="783.3" y="74" width="42.4" height="26" fill="#76b7b2" stroke="white"/>
+<text x="804.5" y="91" text-anchor="middle" fill="white">P14</text>
+<rect x="825.7" y="74" width="42.4" height="26" fill="#4e79a7" stroke="white"/>
+<text x="846.9" y="91" text-anchor="middle" fill="white">P1</text>
+<rect x="868.1" y="74" width="42.4" height="26" fill="#edc948" stroke="white"/>
+<text x="889.3" y="91" text-anchor="middle" fill="white">P16</text>
+<rect x="910.5" y="74" width="42.4" height="26" fill="#ff9da7" stroke="white"/>
+<text x="931.7" y="91" text-anchor="middle" fill="white">P18</text>
+<rect x="952.9" y="74" width="42.4" height="26" fill="#b07aa1" stroke="white"/>
+<text x="974.0" y="91" text-anchor="middle" fill="white">P17</text>
+<rect x="995.2" y="74" width="28.3" height="26" fill="#9c755f" stroke="white"/>
+<text x="1009.4" y="91" text-anchor="middle" fill="white">P19</text>
+<rect x="1023.5" y="74" width="42.4" height="26" fill="#bab0ac" stroke="white"/>
+<text x="1044.7" y="91" text-anchor="middle" fill="white">P20</text>
+<rect x="1065.9" y="74" width="14.1" height="26" fill="#9c755f" stroke="white"/>
+<line x1="190.0" y1="36" x2="190.0" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="190.0" y="126" text-anchor="middle" fill="#555">0</text>
+<line x1="232.4" y1="36" x2="232.4" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="232.4" y="126" text-anchor="middle" fill="#555">3</text>
+<line x1="274.8" y1="36" x2="274.8" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="274.8" y="126" text-anchor="middle" fill="#555">6</text>
+<line x1="317.1" y1="36" x2="317.1" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="317.1" y="126" text-anchor="middle" fill="#555">9</text>
+<line x1="359.5" y1="36" x2="359.5" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="359.5" y="126" text-anchor="middle" fill="#555">12</text>
+<line x1="401.9" y1="36" x2="401.9" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="401.9" y="126" text-anchor="middle" fill="#555">15</text>
+<line x1="444.3" y1="36" x2="444.3" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="444.3" y="126" text-anchor="middle" fill="#555">18</text>
+<line x1="486.7" y1="36" x2="486.7" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="486.7" y="126" text-anchor="middle" fill="#555">21</text>
+<line x1="529.0" y1="36" x2="529.0" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="529.0" y="126" text-anchor="middle" fill="#555">24</text>
+<line x1="571.4" y1="36" x2="571.4" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="571.4" y="126" text-anchor="middle" fill="#555">27</text>
+<line x1="613.8" y1="36" x2="613.8" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="613.8" y="126" text-anchor="middle" fill="#555">30</text>
+<line x1="656.2" y1="36" x2="656.2" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="656.2" y="126" text-anchor="middle" fill="#555">33</text>
+<line x1="698.6" y1="36" x2="698.6" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="698.6" y="126" text-anchor="middle" fill="#555">36</text>
+<line x1="741.0" y1="36" x2="741.0" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="741.0" y="126" text-anchor="middle" fill="#555">39</text>
+<line x1="783.3" y1="36" x2="783.3" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="783.3" y="126" text-anchor="middle" fill="#555">42</text>
+<line x1="825.7" y1="36" x2="825.7" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="825.7" y="126" text-anchor="middle" fill="#555">45</text>
+<line x1="868.1" y1="36" x2="868.1" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="868.1" y="126" text-anchor="middle" fill="#555">48</text>
+<line x1="910.5" y1="36" x2="910.5" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="910.5" y="126" text-anchor="middle" fill="#555">51</text>
+<line x1="952.9" y1="36" x2="952.9" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="952.9" y="126" text-anchor="middle" fill="#555">54</text>
+<line x1="995.2" y1="36" x2="995.2" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="995.2" y="126" text-anchor="middle" fill="#555">57</text>
+<line x1="1037.6" y1="36" x2="1037.6" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="1037.6" y="126" text-anchor="middle" fill="#555">60</text>
+<line x1="1080.0" y1="36" x2="1080.0" y2="112" stroke="#ccc" stroke-width="0.5"/>
+<text x="1080.0" y="126" text-anchor="middle" fill="#555">63</text>
+</svg>

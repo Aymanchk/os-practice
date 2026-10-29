@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="114" viewBox="0 0 1100 114" font-family="Arial, sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="22" font-size="16" font-weight="bold">jobs.txt: FCFS</text>
+<text x="10" y="61" font-weight="bold">FCFS</text>
+<rect x="190.0" y="40" width="270.9" height="26" fill="#4e79a7" stroke="white"/>
+<text x="325.4" y="57" text-anchor="middle" fill="white">P1</text>
+<rect x="460.9" y="40" width="154.8" height="26" fill="#f28e2b" stroke="white"/>
+<text x="538.3" y="57" text-anchor="middle" fill="white">P2</text>
+<rect x="615.7" y="40" width="38.7" height="26" fill="#e15759" stroke="white"/>
+<text x="635.0" y="57" text-anchor="middle" fill="white">P3</text>
+<rect x="654.3" y="40" width="232.2" height="26" fill="#76b7b2" stroke="white"/>
+<text x="770.4" y="57" text-anchor="middle" fill="white">P4</text>
+<rect x="886.5" y="40" width="116.1" height="26" fill="#59a14f" stroke="white"/>
+<text x="944.6" y="57" text-anchor="middle" fill="white">P5</text>
+<rect x="1002.6" y="40" width="77.4" height="26" fill="#edc948" stroke="white"/>
+<text x="1041.3" y="57" text-anchor="middle" fill="white">P6</text>
+<line x1="190.0" y1="36" x2="190.0" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="190.0" y="92" text-anchor="middle" fill="#555">0</text>
+<line x1="228.7" y1="36" x2="228.7" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="228.7" y="92" text-anchor="middle" fill="#555">1</text>
+<line x1="267.4" y1="36" x2="267.4" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="267.4" y="92" text-anchor="middle" fill="#555">2</text>
+<line x1="306.1" y1="36" x2="306.1" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="306.1" y="92" text-anchor="middle" fill="#555">3</text>
+<line x1="344.8" y1="36" x2="344.8" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="344.8" y="92" text-anchor="middle" fill="#555">4</text>
+<line x1="383.5" y1="36" x2="383.5" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="383.5" y="92" text-anchor="middle" fill="#555">5</text>
+<line x1="422.2" y1="36" x2="422.2" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="422.2" y="92" text-anchor="middle" fill="#555">6</text>
+<line x1="460.9" y1="36" x2="460.9" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="460.9" y="92" text-anchor="middle" fill="#555">7</text>
+<line x1="499.6" y1="36" x2="499.6" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="499.6" y="92" text-anchor="middle" fill="#555">8</text>
+<line x1="538.3" y1="36" x2="538.3" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="538.3" y="92" text-anchor="middle" fill="#555">9</text>
+<line x1="577.0" y1="36" x2="577.0" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="577.0" y="92" text-anchor="middle" fill="#555">10</text>
+<line x1="615.7" y1="36" x2="615.7" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="615.7" y="92" text-anchor="middle" fill="#555">11</text>
+<line x1="654.3" y1="36" x2="654.3" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="654.3" y="92" text-anchor="middle" fill="#555">12</text>
+<line x1="693.0" y1="36" x2="693.0" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="693.0" y="92" text-anchor="middle" fill="#555">13</text>
+<line x1="731.7" y1="36" x2="731.7" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="731.7" y="92" text-anchor="middle" fill="#555">14</text>
+<line x1="770.4" y1="36" x2="770.4" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="770.4" y="92" text-anchor="middle" fill="#555">15</text>
+<line x1="809.1" y1="36" x2="809.1" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="809.1" y="92" text-anchor="middle" fill="#555">16</text>
+<line x1="847.8" y1="36" x2="847.8" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="847.8" y="92" text-anchor="middle" fill="#555">17</text>
+<line x1="886.5" y1="36" x2="886.5" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="886.5" y="92" text-anchor="middle" fill="#555">18</text>
+<line x1="925.2" y1="36" x2="925.2" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="925.2" y="92" text-anchor="middle" fill="#555">19</text>
+<line x1="963.9" y1="36" x2="963.9" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="963.9" y="92" text-anchor="middle" fill="#555">20</text>
+<line x1="1002.6" y1="36" x2="1002.6" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="1002.6" y="92" text-anchor="middle" fill="#555">21</text>
+<line x1="1041.3" y1="36" x2="1041.3" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="1041.3" y="92" text-anchor="middle" fill="#555">22</text>
+<line x1="1080.0" y1="36" x2="1080.0" y2="78" stroke="#ccc" stroke-width="0.5"/>
+<text x="1080.0" y="92" text-anchor="middle" fill="#555">23</text>
+</svg>
