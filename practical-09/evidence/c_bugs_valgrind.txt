@@ -1,0 +1,56 @@
+==3765== Memcheck, a memory error detector
+==3765== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==3765== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==3765== Command: ./bugs_glibc
+==3765==
+==3765== Invalid write of size 1
+==3765==    at 0x4000754: main (bugs.c:31)
+==3765==  Address 0x4aae205 is 5 bytes inside a block of size 32 free'd
+==3765==    at 0x48A86B8: free (vg_replace_malloc.c:990)
+==3765==    by 0x400074B: main (bugs.c:30)
+==3765==  Block was alloc'd at
+==3765==    at 0x48A5618: malloc (vg_replace_malloc.c:447)
+==3765==    by 0x400073F: main (bugs.c:29)
+==3765==
+==3765== Invalid read of size 1
+==3765==    at 0x400077C: main (bugs.c:36)
+==3765==  Address 0x4aae260 is 0 bytes inside a block of size 32 free'd
+==3765==    at 0x48A86B8: free (vg_replace_malloc.c:990)
+==3765==    by 0x4000777: main (bugs.c:35)
+==3765==  Block was alloc'd at
+==3765==    at 0x48A5618: malloc (vg_replace_malloc.c:447)
+==3765==    by 0x400075F: main (bugs.c:33)
+==3765==
+==3765== Invalid free() / delete / delete[] / realloc()
+==3765==    at 0x48A86B8: free (vg_replace_malloc.c:990)
+==3765==    by 0x400079F: main (bugs.c:40)
+==3765==  Address 0x4aae2c0 is 0 bytes inside a block of size 16 free'd
+==3765==    at 0x48A86B8: free (vg_replace_malloc.c:990)
+==3765==    by 0x4000797: main (bugs.c:39)
+==3765==  Block was alloc'd at
+==3765==    at 0x48A5618: malloc (vg_replace_malloc.c:447)
+==3765==    by 0x4000787: main (bugs.c:38)
+==3765==
+программа дошла до конца, прочитано после free: 1
+==3765==
+==3765== HEAP SUMMARY:
+==3765==     in use at exit: 300 bytes in 2 blocks
+==3765==   total heap usage: 6 allocs, 5 frees, 4,476 bytes allocated
+==3765==
+==3765== 100 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==3765==    at 0x48A5618: malloc (vg_replace_malloc.c:447)
+==3765==    by 0x4000713: main (bugs.c:25)
+==3765==
+==3765== 200 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==3765==    at 0x48A5618: malloc (vg_replace_malloc.c:447)
+==3765==    by 0x400071F: main (bugs.c:26)
+==3765==
+==3765== LEAK SUMMARY:
+==3765==    definitely lost: 300 bytes in 2 blocks
+==3765==    indirectly lost: 0 bytes in 0 blocks
+==3765==      possibly lost: 0 bytes in 0 blocks
+==3765==    still reachable: 0 bytes in 0 blocks
+==3765==         suppressed: 0 bytes in 0 blocks
+==3765==
+==3765== For lists of detected and suppressed errors, rerun with: -s
+==3765== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)

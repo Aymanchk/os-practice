@@ -1,0 +1,83 @@
+valgrind --tool=memcheck --leak-check=full --error-exitcode=1 ./test_myalloc
+==3750== Memcheck, a memory error detector
+==3750== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==3750== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==3750== Command: ./test_myalloc
+==3750==
+== Основа: разбиение и слияние ==
+[ok]     my_malloc возвращает адреса, выровненные по 16 байт
+[ok]     блоки не перекрываются (данные не испортились)
+[ok]     три занятых блока и один свободный остаток (разбиение)
+[ok]     после free среднего блока свободных блоков два (соседи заняты)
+[ok]     после free левого блока он слился с соседом: свободных опять два
+[ok]     после free всех блоков снова один свободный блок на весь регион (слияние)
+[ok]     my_free(NULL) ничего не делает
+[ok]     my_malloc(0) возвращает уникальный указатель, его можно освободить
+[ok]     слишком большой запрос возвращает NULL
+== Две стратегии ==
+[ok]     first fit: запрос 48 попал в первую дыру списка (304 байта)
+[ok]     first fit: после освобождения всего куча целая
+[ok]     best fit: запрос 48 попал в самую маленькую дыру (64 байта)
+[ok]     best fit: после освобождения всего куча целая
+== realloc ==
+[ok]     realloc растёт на месте, если сосед свободен
+[ok]     realloc переносит блок, если сосед занят, и сохраняет данные
+[ok]     realloc уменьшает блок на месте
+[ok]     realloc(NULL, n) работает как malloc
+[ok]     realloc(p, 0) освобождает блок и возвращает NULL
+[ok]     после realloc-операций куча целая и снова один блок
+== Детектор утечек и use-after-free ==
+[ok]     детектор: без записи после free яд цел
+[ok]     детектор: запись после free найдена
+[ok]     детектор: двойной free и free чужого указателя найдены (всего 3 ошибки)
+[ok]     детектор: найдено 2 утечки
+[ok]     детектор: после освобождения утечек нет
+[ok]     детектор: карантин переполняется без ошибок, куча целая
+== Случайная нагрузка ==
+[ok]     first fit: 200000 случайных malloc/realloc/free, данные не испорчены
+[ok]     first fit: после освобождения всего один свободный блок
+[ok]     best fit: 200000 случайных malloc/realloc/free, данные не испорчены
+[ok]     best fit: после освобождения всего один свободный блок
+
+Проверок: 29, провалено: 0
+==3750==
+==3750== HEAP SUMMARY:
+==3750==     in use at exit: 0 bytes in 0 blocks
+==3750==   total heap usage: 3 allocs, 3 frees, 5,040 bytes allocated
+==3750==
+==3750== All heap blocks were freed -- no leaks are possible
+==3750==
+==3750== For lists of detected and suppressed errors, rerun with: -s
+==3750== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+valgrind --tool=memcheck --leak-check=full --error-exitcode=1 ./bench mixed first
+==3751== Memcheck, a memory error detector
+==3751== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==3751== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==3751== Command: ./bench mixed first
+==3751==
+mixed first 101.2 64268 0.62 0
+==3751==
+==3751== HEAP SUMMARY:
+==3751==     in use at exit: 0 bytes in 0 blocks
+==3751==   total heap usage: 7 allocs, 7 frees, 52,096 bytes allocated
+==3751==
+==3751== All heap blocks were freed -- no leaks are possible
+==3751==
+==3751== For lists of detected and suppressed errors, rerun with: -s
+==3751== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+valgrind --tool=memcheck --leak-check=full --error-exitcode=1 ./bench mixed best
+==3752== Memcheck, a memory error detector
+==3752== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==3752== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==3752== Command: ./bench mixed best
+==3752==
+mixed best 141.9 64284 0.25 0
+==3752==
+==3752== HEAP SUMMARY:
+==3752==     in use at exit: 0 bytes in 0 blocks
+==3752==   total heap usage: 7 allocs, 7 frees, 52,096 bytes allocated
+==3752==
+==3752== All heap blocks were freed -- no leaks are possible
+==3752==
+==3752== For lists of detected and suppressed errors, rerun with: -s
+==3752== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

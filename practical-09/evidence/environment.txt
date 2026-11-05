@@ -1,0 +1,6 @@
+Python 3.14.4
+aarch64
+10
+Ubuntu 26.04.1 LTS
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+valgrind-3.26.0

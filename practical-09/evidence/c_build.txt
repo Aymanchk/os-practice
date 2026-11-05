@@ -1,0 +1,4 @@
+gcc -std=c11 -O2 -g -Wall -Wextra -o test_myalloc test_myalloc.c myalloc.c
+gcc -std=c11 -O2 -g -Wall -Wextra -o bench bench.c myalloc.c
+gcc -std=c11 -O2 -g -Wall -Wextra -o bugs_my bugs.c myalloc.c
+gcc -std=c11 -O2 -g -Wall -Wextra -DUSE_GLIBC -o bugs_glibc bugs.c
