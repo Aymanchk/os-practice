@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" font-family="sans-serif" font-size="12">
+<rect width="640" height="360" fill="white"/>
+<text x="320.0" y="18" text-anchor="middle" font-size="14">Размер TLB и доля попаданий (refs_long.txt, LRU)</text>
+<line x1="60" y1="310.0" x2="620" y2="310.0" stroke="#ddd"/>
+<text x="54" y="314.0" text-anchor="end">0.0</text>
+<line x1="60" y1="282.0" x2="620" y2="282.0" stroke="#ddd"/>
+<text x="54" y="286.0" text-anchor="end">0.1</text>
+<line x1="60" y1="254.0" x2="620" y2="254.0" stroke="#ddd"/>
+<text x="54" y="258.0" text-anchor="end">0.2</text>
+<line x1="60" y1="226.0" x2="620" y2="226.0" stroke="#ddd"/>
+<text x="54" y="230.0" text-anchor="end">0.3</text>
+<line x1="60" y1="198.0" x2="620" y2="198.0" stroke="#ddd"/>
+<text x="54" y="202.0" text-anchor="end">0.4</text>
+<line x1="60" y1="170.0" x2="620" y2="170.0" stroke="#ddd"/>
+<text x="54" y="174.0" text-anchor="end">0.5</text>
+<line x1="60" y1="142.0" x2="620" y2="142.0" stroke="#ddd"/>
+<text x="54" y="146.0" text-anchor="end">0.6</text>
+<line x1="60" y1="114.0" x2="620" y2="114.0" stroke="#ddd"/>
+<text x="54" y="118.0" text-anchor="end">0.7</text>
+<line x1="60" y1="86.0" x2="620" y2="86.0" stroke="#ddd"/>
+<text x="54" y="90.0" text-anchor="end">0.8</text>
+<line x1="60" y1="58.0" x2="620" y2="58.0" stroke="#ddd"/>
+<text x="54" y="62.0" text-anchor="end">0.9</text>
+<line x1="60" y1="30.0" x2="620" y2="30.0" stroke="#ddd"/>
+<text x="54" y="34.0" text-anchor="end">1.0</text>
+<text x="60.0" y="328" text-anchor="middle">1</text>
+<text x="110.9" y="328" text-anchor="middle">2</text>
+<text x="161.8" y="328" text-anchor="middle">3</text>
+<text x="212.7" y="328" text-anchor="middle">4</text>
+<text x="263.6" y="328" text-anchor="middle">5</text>
+<text x="314.5" y="328" text-anchor="middle">6</text>
+<text x="365.5" y="328" text-anchor="middle">7</text>
+<text x="416.4" y="328" text-anchor="middle">8</text>
+<text x="467.3" y="328" text-anchor="middle">9</text>
+<text x="518.2" y="328" text-anchor="middle">10</text>
+<text x="569.1" y="328" text-anchor="middle">11</text>
+<text x="620.0" y="328" text-anchor="middle">12</text>
+<text x="320.0" y="352" text-anchor="middle">число записей TLB</text>
+<text x="14" y="180.0" text-anchor="middle" transform="rotate(-90 14 180.0)">доля попаданий</text>
+<polyline points="60.0,217.4 110.9,127.1 161.8,42.5 212.7,41.2 263.6,40.0 314.5,37.8 365.5,36.2 416.4,34.8 467.3,33.6 518.2,32.2 569.1,31.4 620.0,30.3" fill="none" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="60.0" cy="217.4" r="3.5" fill="#1f77b4"/>
+<circle cx="110.9" cy="127.1" r="3.5" fill="#1f77b4"/>
+<circle cx="161.8" cy="42.5" r="3.5" fill="#1f77b4"/>
+<circle cx="212.7" cy="41.2" r="3.5" fill="#1f77b4"/>
+<circle cx="263.6" cy="40.0" r="3.5" fill="#1f77b4"/>
+<circle cx="314.5" cy="37.8" r="3.5" fill="#1f77b4"/>
+<circle cx="365.5" cy="36.2" r="3.5" fill="#1f77b4"/>
+<circle cx="416.4" cy="34.8" r="3.5" fill="#1f77b4"/>
+<circle cx="467.3" cy="33.6" r="3.5" fill="#1f77b4"/>
+<circle cx="518.2" cy="32.2" r="3.5" fill="#1f77b4"/>
+<circle cx="569.1" cy="31.4" r="3.5" fill="#1f77b4"/>
+<circle cx="620.0" cy="30.3" r="3.5" fill="#1f77b4"/>
+</svg>
