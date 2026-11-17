@@ -1,0 +1,13 @@
+Строки по 1000 обращений к 20 страницам, seed 2026, кадров 5
+   строка     FIFO      LRU  Optimal    Clock   доля отказов LRU
+   random      755      753      484      760   75.3%
+ locality      177      171      127      170   17.1%
+
+Работа на одно обращение (элементарные действия), 5 кадров:
+   строка     LRU   Clock
+   random    4.74    1.85
+ locality    1.83    1.22
+
+Время на 1000 обращений, мс (медиана 7 прогонов, Python):
+   random  FIFO 0.08, LRU 0.25, Optimal 0.59, Clock 0.17
+ locality  FIFO 0.05, LRU 0.12, Optimal 0.41, Clock 0.14
