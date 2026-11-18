@@ -1,0 +1,30 @@
+== iso-a: процессы, которые он видит
+    PID     1  python3 calc_server.py
+    PID     7  python3 -c import os
+== iso-b: процессы, которые он видит
+    PID     1  python3 calc_server.py
+    PID     7  python3 -c import os
+
+== Хост (ВМ Docker) глазами контейнера с --pid=host
+    всего процессов на хосте: 188
+    PID  1115  python3 calc_server.py
+    PID  1163  python3 calc_server.py
+    iso-a: PID 1 внутри = PID 1115 на хосте
+    iso-b: PID 1 внутри = PID 1163 на хосте
+
+== Пространства имён PID 1 (одинаковое число = общее пространство)
+  iso-a:
+    pid=4026532556  mnt=4026532553  net=4026532558  uts=4026532554  ipc=4026532555
+  iso-b:
+    pid=4026532692  mnt=4026532689  net=4026532694  uts=4026532690  ipc=4026532691
+  хост:
+    pid=4026531836  mnt=4026531832  net=4026531833  uts=4026531838  ipc=4026531839
+
+== UTS и сеть: у каждого своё имя и свой IP
+    box-a: IP 172.17.0.2
+    box-b: IP 172.17.0.3
+    iso-a -> iso-b по имени: не видит (gaierror): в сети по умолчанию нет DNS между контейнерами
+
+== mount: файл в /tmp одного контейнера не виден в другом
+    iso-a: -rw-r--r-- 1 calc calc 13 Nov 18 10:09 /tmp/only-in-a
+    iso-b: ls: cannot access '/tmp/only-in-a': No such file or directory

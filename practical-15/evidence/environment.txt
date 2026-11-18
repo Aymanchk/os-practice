@@ -1,0 +1,7 @@
+		macOS 		27.0.1 		26A434
+arm64
+10
+Docker Engine 29.8.2
+Docker Desktop CLI plugin version: 4.95.0
+ВМ: Docker Desktop, ядро 7.0.14-linuxkit
+Python 3.14.10
