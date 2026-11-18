@@ -1,0 +1,5 @@
+Python 3.14.4
+aarch64
+10
+Ubuntu 26.04.1 LTS
+matplotlib 3.10.7+dfsg1
