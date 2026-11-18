@@ -78,10 +78,11 @@ cd os-practice
 ./modul1/run.sh
 ```
 
-Все восемь практических подряд:
+Все практические подряд (ПР-12 и ПР-14 лучше запускать через `sudo`, иначе части с `mount` и сбросом кэша пропускаются; ПР-15 запускается на машине с Docker):
 
 ```bash
-for n in 1 2 3 4 5 6 7 8; do ./practical-0$n/run.sh; done
+for n in 01 02 03 04 05 06 07 08 09 10 11 12 13 14; do ./practical-$n/run.sh; done
+./practical-15/run.sh
 ```
 
 Что нужно каждой работе:
@@ -90,18 +91,20 @@ for n in 1 2 3 4 5 6 7 8; do ./practical-0$n/run.sh; done
 | --- | --- |
 | `python3` | все работы (проверено на Python 3.14, нужен 3.11+) |
 | `procps` | команда `ps` в ПР-3 (в обычной Ubuntu уже есть) |
-| `strace` | трассировка системных вызовов в ПР-2 |
-| `python3-matplotlib` | PNG-график в ПР-5 (без него работает всё, кроме графика) |
+| `strace` | трассировка и подсчёт системных вызовов в ПР-2 и ПР-14 |
+| `python3-matplotlib` | PNG-графики в ПР-5, ПР-11 и ПР-13 (без него работает всё, кроме графиков) |
 | `shellcheck` | необязательно: проверка bash-скриптов |
-| `build-essential`, `valgrind` | уровень C в ПР-9: сборка своего аллокатора и проверка памяти |
+| `build-essential`, `valgrind` | уровень C в ПР-9 и программа на C в ПР-14 (`valgrind` по желанию): сборка своего аллокатора и проверка памяти |
+| `e2fsprogs`, `util-linux` | образ ext4 и loop-устройства в ПР-12 и ПР-14 (нужен root) |
+| Docker | ПР-15: образ сервиса, лимиты, изоляция |
 
 **Windows.** В PowerShell от имени администратора выполнить `wsl --install -d Ubuntu`, после перезагрузки открыть Ubuntu из меню Пуск и выполнить команды выше. Команды вводятся в терминале Ubuntu, а не в PowerShell. Репозиторий лучше клонировать в домашнюю папку WSL (`~`), а не в `/mnt/c/...`: там права файлов и скорость работают как в Linux.
 
 **macOS.** Работы делались в виртуальной машине [UTM](https://mac.getutm.app/) с Ubuntu для ARM64. Второй вариант: Docker Desktop.
 
 ```bash
-docker run --rm -it --shm-size=512m -v "$PWD":/work -w /work ubuntu:26.04 bash
-apt-get update && apt-get install -y python3 python3-matplotlib strace procps
+docker run --rm -it --privileged --shm-size=512m -v "$PWD":/work -w /work ubuntu:26.04 bash
+apt-get update && apt-get install -y python3 python3-matplotlib strace procps gcc make e2fsprogs
 ./practical-05/run.sh
 ```
 
@@ -109,7 +112,9 @@ apt-get update && apt-get install -y python3 python3-matplotlib strace procps
 
 - ПР-1 проверяет настройки самой системы (пользователь `student2`, каталог `/srv/shared`). Как их создать, написано в разделе «Как повторить настройку» [README ПР-1](practical-01/README.md). В Docker-контейнере ПР-1 не имеет смысла.
 - `--shm-size=512m` нужен для ПР-7: по умолчанию Docker даёт `/dev/shm` всего 64 МБ, а замер передаёт 80 МБ. Без флага эти замеры будут пропущены с сообщением.
-- Числа замеров времени (ПР-4, ПР-7) на другом компьютере будут немного другими, но соотношения сохраняются.
+- Числа замеров времени (ПР-4, ПР-7, ПР-14, ПР-15) на другом компьютере будут немного другими, но соотношения сохраняются.
+- `--privileged` нужен для ПР-12 и ПР-14: без него в контейнере нельзя смонтировать loop-образ и сбросить страничный кэш.
+- ПР-15 управляет контейнерами сама, поэтому её скрипты запускаются на хосте с Docker, а не внутри контейнера.
 - Графики и трассировки: `practical-05/rr_quantum.png` (Round Robin), `practical-02/trace.txt` и `trace_cat.txt` (полные трассировки `strace`).
 
 ## Словарик
