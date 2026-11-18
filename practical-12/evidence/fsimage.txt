@@ -1,0 +1,34 @@
+== 1. Образ 16 МБ и ext4 на 128 inode
+смонтировано: /dev/loop0 ext4
+Inode count:              128
+Block count:              4096
+Free blocks:              3021
+Free inodes:              116
+Block size:               4096
+Inode size:               256
+
+== 2. До: место и inode
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/loop0       12M  152K   11M   2% /mnt/pr12
+  Filesystem     Inodes IUsed IFree IUse% Mounted on
+  /dev/loop0        128    12   116   10% /mnt/pr12
+
+== 3. Создаю пустые файлы, пока не кончатся inode
+  создано 25 файлов, занято inode: 37
+  создано 50 файлов, занято inode: 62
+  создано 75 файлов, занято inode: 87
+  создано 100 файлов, занято inode: 112
+  создано файлов: 116, следующий touch: touch: cannot touch '/mnt/pr12/f116': No space left on device
+
+== 4. После: inode кончились, а блоков свободно почти всё
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/loop0       12M  152K   11M   2% /mnt/pr12
+  Filesystem     Inodes IUsed IFree IUse% Mounted on
+  /dev/loop0        128   128     0  100% /mnt/pr12
+
+== 5. В существующий файл писать можно: блоки есть, новый inode не нужен
+  f0: 4194304 Б
+  mkdir: mkdir: No space left on device
+
+== 6. Удаляю один файл: inode освободился, файл снова создаётся
+  touch again: ok, свободно inode: 0

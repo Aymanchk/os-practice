@@ -1,0 +1,12 @@
+== до удаления (первый столбец - номер inode, третий - число жёстких ссылок)
+  48403 -rw-r--r-- 2 file.txt
+  48403 -rw-r--r-- 2 hard.txt
+  48404 lrwxrwxrwx 1 soft.txt -> file.txt
+== после rm file.txt
+  48403 -rw-r--r-- 1 hard.txt
+  48404 lrwxrwxrwx 1 soft.txt -> file.txt
+  cat hard.txt: данные
+  cat soft.txt: cat: soft.txt: No such file or directory
+== жёсткая ссылка на каталог и между ФС
+  ln d d2: ln: d: hard link not allowed for directory
+  ln hard.txt /dev/shm/x: ln: failed to create hard link 'hard.txt' => '/dev/shm/pr12-x': Invalid cross-device link
